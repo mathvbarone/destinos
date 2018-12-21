@@ -1,0 +1,299 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'teutonic';
+    src: url('fontes/teutonic1.eot');
+    src: url('fontes/teutonic1.eot?#iefix') format('embedded-opentype'),
+         url('fontes/teutonic1.woff') format('woff'),
+         url('fontes/teutonic1.ttf') format('truetype'),
+         url('fontes/teutonic1.svg#teutonic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'century';
+    src: url('fontes/century.eot');
+    src: url('fontes/century.eot?#iefix') format('embedded-opentype'),
+         url('fontes/century.woff') format('woff'),
+         url('fontes/century.ttf') format('truetype'),
+         url('fontes/century.svg#century') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+    font-size:100%;
+	margin:0;
+	border:0;
+	padding:0;	
+	list-style:none;
+}
+p{
+	margin-bottom: 1em;
+	}
+
+a{
+	text-decoration:none;
+	color: #fff;
+	}
+	a:hover{
+		text-decoration:underline;
+		transition: text-decoration 0.6s linear;
+		}
+	
+article{
+	width:1000px;
+	margin:0 auto;
+	}
+
+body{
+	background-color:#000;
+	font:12pt century;
+	color:#f5d89f;
+	}
+h2{
+    font-family: 'teutonic';
+	font-size:300%;
+	display:block;
+	margin-bottom:20px;
+	text-shadow: #000 1px 1px 5px; 
+	}
+h3{
+    font-family: 'teutonic';
+	font-size:220%;
+	display:block;
+	margin-bottom:20px;
+	text-shadow: #000 2px 2px 3px; 
+	clear:both;
+	}	
+h4{
+	font-family: 'teutonic';
+	font-size:150%;
+	display:block;
+	margin-bottom:20px;
+	clear:both;
+	}		
+	
+/* HEADER */
+
+header{
+			z-index:49;
+			padding-top:2px;
+			background:url(img/margem_header.jpg)repeat-x  center top #000;	
+			position:fixed;
+			left: 0;
+			bottom:0;
+			width:100%;
+		}
+		#logo{
+	position:absolute;
+	left:50%;
+	top:10px;
+	margin-left:-141px;
+	}
+
+		#wrapHeader{
+		width:1000px;
+		margin:0 auto;
+		background:url(img/bg_header.jpg) no-repeat center center;
+		height:104px;	
+			}
+/* MENU */
+#menu ul li{
+	float:left;
+	margin:20px 0;
+	}
+#menu ul li a{
+	display:block;
+	width:150px;
+	height:56px;
+	text-align:center;
+    font-family: 'teutonic';
+	color:#1f1704;
+	background:url(img/bg_menu.png) no-repeat center;
+	margin:0 8px;
+	font-size:120%;
+	line-height:56px;
+		}		
+		#menu ul li a:hover{
+			text-decoration:none;
+		}
+		
+			
+/* EM COMUM EM TODAS AS ÁREAS */
+
+.area{
+	height:752px;
+	background-repeat:no-repeat;
+	background-size:cover;
+	padding-top:20px;
+	}			
+			
+/*ÁREA VIDEO */
+#areaVideo{
+	position:relative;
+	padding-top:0;
+	height:auto;
+	}
+	
+/* CONCEPT ART */	
+
+#areaConceptart{
+	background-image:url(img/bg_conceptart.jpg);
+	color:#fff;
+	height: auto;
+	}
+	
+	
+	
+/* APRESENTAÇÃO */
+#areaApresentacao{
+	background-image:url(img/bg_ojogo.jpg);
+	padding-top:40px;
+}
+
+/* ÁREA HISTÓRIA */
+#areaHistoria{
+	height:auto;
+	background:url(img/textura-historia.jpg);
+	}
+	
+/* ÁREA QUEM SOMOS */
+
+#areaQuemsomos{
+	background-image:url(img/area_quemsomos.jpg);	
+	}	
+
+/* ÁREA CONTATO */
+#areaContato{
+	background-image:url(img/area_contato.jpg);
+	color:#fff;
+}
+#areaContato li{
+	float:left;
+	margin:0 55px;
+
+	}
+#areaContato a{
+	margin:10px 0;
+	display:block;
+	line-height:20px;
+	}	
+	#areaContato .email{
+	background:url(img/email.png) no-repeat left center;
+	padding-left:30px;
+		}
+	#areaContato .fb{
+	background:url(img/face.png) no-repeat left center;
+	padding-left:30px;	
+	}
+
+#btnTopo a{
+	display:block;
+	width:52px;
+	height:66px;
+	position: fixed;
+	right: 5%;
+	bottom: 20px;
+	z-index: 50;
+	background:url(img/sobe.png) no-repeat center center;
+}
+
+/* SCROLL */
+
+.divScroll {
+	width: 940px; 
+	background-color: rgba(0, 0, 0, 0.7);
+	padding:20px;
+	border-radius:10px;
+	margin-bottom:30px;
+}
+#areaHistoria .scrollPerso{
+	width:620px;
+	float:right;
+	}
+	.divScroll .viewport {
+		width: 910px;
+		height: 370px;
+		overflow: hidden;
+		position: relative;
+	}
+	#areaConceptart .divScroll .viewport{	
+		height:300px;
+	}
+#areaHistoria .divScroll .viewport{
+	height:320px;
+	}	
+	#areaHistoria .scrollPerso .viewport{
+	width:590px;
+	}	
+	.divScroll .overview {
+		list-style: none;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	.divScroll .scrollbar {
+		background: #252525;
+		position: relative;
+		float: right;
+		width: 15px;
+		border-radius:5px;
+		-moz-border-radius:5px;
+		-webkit-border-radius:5px;
+	}
+	.divScroll .track {
+		width:13px;
+		position: relative;
+		padding: 0 1px;
+	}
+	.divScroll .thumb {
+		background: #444;
+		height: 13px;
+		width: 13px;
+		cursor: pointer;
+		overflow: hidden;
+		position: absolute;
+		top: 0;
+		border-radius:5px;
+		-moz-border-radius:5px;
+		-webkit-border-radius:5px;
+		margin-top: 1px;
+	}
+	.divScroll .thumb .end {
+		overflow: hidden;
+		height: 5px;
+		width: 13px;
+	}
+	.divScroll .disable{
+		display: none; 
+	}
+	.noSelect {
+		user-select: none;
+		-o-user-select: none;
+		-moz-user-select: none;
+		-khtml-user-select: none;
+		-webkit-user-select: none;
+	}
+
+
+
+/* CLASSES */
+
+.floatLeft{
+	float:left;
+	}	
+.floatRight{
+	float:right;
+	}	
+.clear{
+	clear:both;
+	}
+.pBorder{
+	border-bottom:1px dashed #fff;
+	display:block;
+	padding-bottom:15px;
+	}		
